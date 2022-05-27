@@ -1,0 +1,28 @@
+.footer{
+    background: #907924;
+    padding: 40px  0 75px;
+    .container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  &-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transform: translate(0 , 25px);
+  }
+  &-nav{
+    li{
+      text-align: center;
+      margin-bottom: 14px;
+    }
+    a{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+}

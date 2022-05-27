@@ -1,0 +1,116 @@
+.header{
+  padding: 48px 0 31px;
+  position: fixed;
+  background-color: #494949;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all ease 150ms;
+  &.scroll-nav{
+    padding: 48px 0 25px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    z-index: 2;
+  }
+  &-logo{
+    display: none;
+  }
+  &-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 0 20px;
+    }
+    a{
+      font-family: $monserant;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #DFDFDF;
+      transition: all ease 300ms;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 100%;
+        height: 20px;
+      }
+      &:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        margin: 0 auto;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #E9BC1D;
+        opacity: 0;
+      }
+      &:hover{
+        color: #E9BC1D;
+        transform: translate(0, -10px);
+        &:after{
+          opacity: 1;
+        }
+      }
+    }
+    &.active{
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+      top: 100%;
+      a{
+        &:hover{
+          transform: translate(0, 0);
+        }
+        &:before{
+          display: none;
+        }
+        &:after{
+          width: 9px;
+          height: 9px;
+          left: -15px;
+          top: 5px;
+          opacity: 1;
+          right: auto;
+          bottom: auto;
+        }
+      }
+    }
+  }
+}
+.header-overlay{
+  background: rgba(77, 74, 74, .3);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  transition: all ease 300ms;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  &.active{
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+  }
+}
+.page-content{
+  margin-top: 100px;
+}
