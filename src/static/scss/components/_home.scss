@@ -47,7 +47,7 @@
       left: 480px;
       top: 50%;
       z-index: 2;
-      margin-top: -75px;
+      margin-top: -50px;
       width: 38px;
       height: 38px;
       transform: rotate(135deg);
@@ -68,15 +68,15 @@
   }
   &-title{
     font-weight: 600;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 36px;
+    line-height: 46px;
     text-transform: uppercase;
     color: #F0F0F0;
     margin-bottom: 20px;
     span{
       font-weight: 600;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: 28px;
+      line-height: 36px;
       text-transform: uppercase;
       color: #D1D1D1;
       display: block;
@@ -85,10 +85,10 @@
   &-text{
     max-width: 455px;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 26px;
     color: #ECECEC;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding: 9px 7px 10px;
   }
   &-button{
